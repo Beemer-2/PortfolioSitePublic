@@ -101,6 +101,11 @@ h2 {
     flex: 5
 }  
 
+#about-and-projects-left-content {
+    position: sticky;
+    top: 50px;
+}
+
 #about-and-projects-left-bottom {
     margin-top: 50px;
     display: flex;    
