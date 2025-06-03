@@ -101,9 +101,22 @@ h2 {
     flex: 5
 }  
 
+
+.project-image {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+}
+
+.project-description {
+    max-width: 800px;
+}
+
+
 #about-and-projects-left-content {
     position: sticky;
     top: 50px;
+    min-width: 300px;
 }
 
 #about-and-projects-left-bottom {
