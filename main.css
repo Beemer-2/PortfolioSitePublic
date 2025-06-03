@@ -213,8 +213,11 @@ h2 {
     flex-wrap: wrap; 
     justify-content: center;
     overflow-x: scroll;
-    max-width: 800px;
     cursor: grab;
+}
+
+#languages-and-skills-context, #hive {
+    max-width: 800px;
 }
 
 /*Disables the scrollbar so the arrows can be used instead*/
