@@ -1,0 +1,320 @@
+@font-face {
+  font-family: 'inter';
+  src: url('../Portfolio-Site/fonts/inter/inter.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root { 
+    --font-color: #F1F6F9;
+    --font-size-medium: 1.2rem;
+    --color-shift-amount-start: 0deg; 
+    --color-shift-amount-middle: 180deg; 
+    --color-shift-amount-end: 360deg;
+    --font-size-xx-large: 2rem;
+    --main-background-colour: #394867;
+    --secondary-background-colour: #212A3E;
+}
+
+* {
+    box-sizing: border-box;
+    color: var(--font-color);
+    font-family: inter, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+#nav-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 10px 0px;
+}
+
+#nav-list > li {
+    margin: 5px 0px;
+    font-size: var(--font-size-medium);
+}
+
+.list-item::after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    border-bottom: 1px solid white;
+    margin-bottom: 5px; /*Needs changing as it does not work with custom font sizes!*/
+    margin-left: 8px;
+}
+
+.list-item-selected::after {
+    width: 25px;
+}
+
+.list-item-normal::after {
+    width: 10px;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 4px;
+}
+
+#about-and-projects-container {
+    padding: 50px;
+    display: flex;
+    gap: 5vw;
+
+}
+
+.background-navy {
+    background-color: var(--main-background-colour);
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.black-border {
+    border: 1px black solid
+}
+
+#projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-p {
+    margin-bottom: 2px
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+#about-and-projects-container > #about-and-projects-left {
+    flex: 4
+}  
+
+#about-and-projects-container > #about-and-projects-right {
+    flex: 5
+}  
+
+#about-and-projects-left-bottom {
+    margin-top: 50px;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+}
+
+#nav-icons {
+    display: flex;
+    gap: 42px
+}
+
+#nav-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+#i-am-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Hue-shift code taken from my other project*/
+#i-am-a-typing-span {
+    margin-left: 3px;    
+    background-image: linear-gradient(20deg, #16d559, #1aa090);
+    animation: hue-shift 3s infinite;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes hue-shift {
+    0% {
+        filter: hue-rotate(var(--color-shift-amount-start));
+    }
+    50% {
+        filter: hue-rotate(var(--color-shift-amount-middle));
+    }
+    100% {
+        filter: hue-rotate(var(--color-shift-amount-end));
+    }
+}
+
+#i-am-a::after {
+    position: relative;
+    animation: 0.6s infinite blink;
+    width: 1px;
+    height: var(--font-size-medium);
+    content: "";
+    display: inline-block;
+    border-right: 1px var(--font-color) solid;
+
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    
+    25% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
+
+#languages-and-skills-container {
+    background-color: var(--secondary-background-colour);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#hive {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    justify-content: center;
+    overflow-x: scroll;
+    max-width: 800px;
+    cursor: grab;
+}
+
+/*Disables the scrollbar so the arrows can be used instead*/
+#hive::-webkit-scrollbar {
+    width: 0px
+}
+
+.hive-row {
+    display: flex;
+    gap: 30px
+
+}
+
+.inner-hive-row {
+    display: flex;  
+    gap: 30px;
+    user-select: none;
+}
+
+.hive-row * {
+    user-select: none;
+}
+
+/*Offsets the row*/
+.hive-row-even {
+    transform: translate(-80px);
+}
+
+.hexagon {
+    width: 130px;
+    height: 150px; /* This maintains the hexagonal aspect ratio */
+    background-color: var(--font-color); /* Golden color for a beehive look */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-hive-row {
+    animation: scroller 20s linear infinite;
+}
+
+@keyframes scroller {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(calc(-100% - 30px)); /*Not sure why 30px matters. Assuming it is the gap.*/
+    }
+}
+
+.hexagon-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.hexagon-icon-smaller {
+    width: 90px;
+    height: 90px;
+}
+
+.hexagon-icon-smallest {
+    width: 80px;
+    height:  80px;
+}
+
+
+
+/* #terminal { SCRAPPED FEATURE
+    margin-top: 20px;
+    background-color: #222222;
+    width: 840px;
+    min-height: 400px;
+}
+
+#terminal-text {
+    font-family: "jersey 10";
+    font-size: var(--font-size-xx-large);
+    margin-top: 4px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#terminal-text::after {
+    
+    position: relative;
+    animation: 0.6s infinite blink;
+    width: 1px;
+    height: 1.6rem;
+    content: "";
+    display: block;
+    border-right: 1px var(--font-color) solid;
+} */
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.very-large-text {
+    font-size: 2.4rem;
+}
+
+#contact-me-container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-background-colour);
+}
+
+#contact-me-inside-container {
+    display: grid;
+    gap: 30px;  
+    grid-template-columns: 1fr 1px 1fr;
+}
+
+#contact-me-inside-container > p {
+    text-align: center;
+}

@@ -1,0 +1,15 @@
+asset, source, license, date, copyright-holder
+email.svg, https://www.svgrepo.com/svg/502648/email, PD license (public domain), 12/05/2025-22:33, Ananthanath A X Kalaiism
+github.svg, https://www.svgrepo.com/svg/512317/github-142, PD license (public domain), 12/05/2025-22:33, bypeople
+python.svg, https://www.svgrepo.com/svg/374016/python, MIT license, 13/05/2025-11:14, vscode-icons
+csharp.svg, https://www.svgrepo.com/svg/452184/csharp, MIT license, 13/05/2025-11:41, Garuda Technology
+js.svg, https://www.svgrepo.com/svg/452045/js, MIT license, 13/05/2025-11:42, Garuda Technology
+linux.svg, https://www.svgrepo.com/svg/354004/linux-tux, Logo license, 13/05/2025-11:44, gilbarbara
+manjaro.svg, https://www.svgrepo.com/svg/330885/manjaro, Logo license, 13/05/2025-11:47, [UNNAMED-AUTHOR]
+typescript.svg, https://www.svgrepo.com/svg/354478/typescript-icon, Logo license, 13/05/2025-11:48, gilbarbara
+android.svg, https://www.svgrepo.com/svg/475631/android-color, Logo license, 13/05/2025-11:50, [UNNAMED-AUTHOR]
+git.svg, https://www.svgrepo.com/svg/452210/git, MIT license, 13/05/2025-11:51, Garuda Technology
+html5.svg, https://www.svgrepo.com/svg/452228/html-5, MIT license, 13/05/2025-12:06, Garuda Technology
+css.svg, https://www.svgrepo.com/svg/373535/css, MIT license, 13/05/2025-12:07, vscode-icons
+arrows-h.svg, https://www.svgrepo.com/svg/488504/arrows-h, MIT license, 13/05/2025-12:10, Klever Space
+godot.svg, https://godotengine.org/press/, 03/06/2025-15:23, Godot Engine Logo Copyright \n (c) 2017 Andrea Calabró \n\n This work is licensed under the Creative Commons Attribution 4.0 International license (CC BY 4.0 International): https://creativecommons.org/licenses/by/4.0/, Andrea Calabró
