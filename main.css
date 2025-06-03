@@ -17,6 +17,7 @@
 }
 
 * {
+    scroll-behavior: smooth;
     box-sizing: border-box;
     color: var(--font-color);
     font-family: inter, sans-serif;
