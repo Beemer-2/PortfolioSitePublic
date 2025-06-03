@@ -214,9 +214,10 @@ h2 {
     justify-content: center;
     overflow-x: scroll;
     cursor: grab;
+    max-width: 800px;
 }
 
-#languages-and-skills-context, #hive {
+#languages-and-skills-context {
     max-width: 800px;
 }
 
