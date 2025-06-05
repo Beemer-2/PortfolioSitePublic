@@ -212,7 +212,7 @@ h2 {
     flex-direction: column;
     flex-wrap: wrap; 
     justify-content: center;
-    overflow-x: scroll;
+    overflow-x: hidden;
     cursor: grab;
     max-width: 800px;
     width: 100%;
