@@ -64,8 +64,8 @@ h1 {
 #about-and-projects-container {
     padding: 50px;
     display: flex;
+    flex-wrap: wrap;
     gap: 5vw;
-
 }
 
 .background-navy {
@@ -81,6 +81,7 @@ h1 {
 }
 
 #projects-container {
+    min-width: 340px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,6 +216,8 @@ h2 {
     overflow-x: scroll;
     cursor: grab;
     max-width: 800px;
+    width: 100%;
+    height: auto;
 }
 
 #languages-and-skills-context {
@@ -332,12 +335,4 @@ h2 {
     background-color: var(--main-background-colour);
 }
 
-#contact-me-inside-container {
-    display: grid;
-    gap: 30px;  
-    grid-template-columns: 1fr 1px 1fr;
-}
 
-#contact-me-inside-container > p {
-    text-align: center;
-}
