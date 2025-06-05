@@ -23,6 +23,10 @@
     font-family: inter, sans-serif;
 }
 
+html {
+    background-color: #394867;
+}
+
 body {
     margin: 0;
 }
