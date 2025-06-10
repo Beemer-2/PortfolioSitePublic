@@ -93,7 +93,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 400px;
+    min-width: 280px;
     gap: 22px
 }
 
@@ -355,5 +355,3 @@ h2 {
     align-items: center;
     background-color: var(--main-background-colour);
 }
-
-
