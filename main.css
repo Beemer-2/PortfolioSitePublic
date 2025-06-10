@@ -65,6 +65,11 @@ h1 {
     margin-bottom: 4px;
 }
 
+
+#projects-h2 {
+    margin-bottom: 0;
+}
+
 #about-and-projects-container {
     padding: 3dvh 2.5dvw;
     display: flex;
@@ -89,10 +94,12 @@ h1 {
     flex-direction: column;
     align-items: center;
     min-width: 400px;
+    gap: 22px
 }
 
 .project-p {
-    margin-bottom: 2px
+    margin-bottom: 2px;
+    margin-top: 0px
 }
 
 h2 {
@@ -125,11 +132,16 @@ h2 {
     min-width: 300px;
 }
 
+.padding-top-med {
+    padding-top: calc(0.2dvh + 1px);
+}
+
 #about-and-projects-left-bottom {
     margin-top: 50px;
     display: flex;    
     flex-direction: column;
     align-items: center;
+    justify-content: left;
 }
 
 #nav-icons {
@@ -198,13 +210,17 @@ h2 {
     }
 }
 
+.white-border {
+    border: 1px var(--font-color) solid
+}
 
-
-
+.width-max {
+    width: 100%;
+}
 
 #languages-and-skills-container {
     background-color: var(--secondary-background-colour);
-    padding: 50px;
+    padding: 3dvh 2.5dvw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -222,6 +238,7 @@ h2 {
     max-width: 800px;
     width: 100%;
     height: auto;
+    margin-bottom: calc(1dvw + 10px);
 }
 
 #languages-and-skills-context {
